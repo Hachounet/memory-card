@@ -1,8 +1,15 @@
-export default function Score() {
+import PropTypes from 'prop-types';
+
+export default function Score({ score, bestScore }) {
   return (
     <div className="score-container">
-      <p>Score : </p>
-      <p>Best score : </p>
+      <p>Score : {score}</p>
+      <p>Best score : {bestScore}</p>
     </div>
   );
 }
+
+Score.propTypes = {
+  score: PropTypes.number,
+  bestScore: PropTypes.number,
+};
