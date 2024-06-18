@@ -6,7 +6,7 @@
 
 // Custom properties
 html {
-  --color-pokefont: rgb(97, 95, 95);
+  --color-pokefont: rgb(179, 210, 224);
   --font-pokefont: 'Pokemon Solid', sans-serif;
   --size-pokefont: 3rem;
   --min-width: 320px;
@@ -35,7 +35,7 @@ body {
   width: 100vw;
   min-width: var(--min-width);
   min-height: 100vh;
-  background-color: #b88686;
+  background-color: #48658b;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content auto max-content;
@@ -48,7 +48,7 @@ body {
 .header,
 .footer {
   width: 100%;
-  border: 1px solid darkslategray;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,6 @@ body {
 }
 
 .card-container {
-  border: 1px solid green;
   width: 60%;
   min-width: 320px;
   height: 100%;
