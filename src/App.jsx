@@ -34,7 +34,7 @@ export default function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      if (!localStorage.getItem('data')) {
+      if (Object.keys(data).length === 0) {
         const dataObj = await fetchAllData(initialArrayIDs, data); // Fetch all data required to play the game
         localStorage.setItem('data', JSON.stringify(data));
         setData(dataObj);
